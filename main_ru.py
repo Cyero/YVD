@@ -1,3 +1,4 @@
+import msvcrt
 import art
 import os
 from pytube import YouTube
@@ -23,13 +24,13 @@ def download():
         for link in links:
             vid = YouTube(link)
             vid.streams.filter(file_extension='mp4').get_highest_resolution().download(output_path=os.getcwd())
-    except:
+    except Exception:
         print("                                            \u00a9 Ant.Butkov")
         print(art.text2art("YVD", "block"))
         print("         Добро пожаловать в YoutubeVideoDownloader \n       Для загрузки укажите URL желаемых видео "
-            "ниже \n         Введите 'FILE' для загрузки URL из файла \n      (Каждый URL должен начинаться с "
-            "новой строки) \n            Введите 'GO' чтобы начать загрузку \n         После чего укажите папку "
-            "для сохранения \n       Для отмены загрузки файла нажмите 'Ctrl+C'")
+              "ниже \n         Введите 'FILE' для загрузки URL из файла \n      (Каждый URL должен начинаться с "
+              "новой строки) \n            Введите 'GO' чтобы начать загрузку \n         После чего укажите папку "
+              "для сохранения \n       Для отмены загрузки файла нажмите 'Ctrl+C'")
         links = []
         while True:
             url = input("Введите URL видео: \n -> ")
@@ -51,7 +52,7 @@ def download():
                                 links.append(line)
                     print('                     ---Загружается---')
                     break
-                except:
+                except Exception:
                     print('     \u21b3 Ошибка загрузки URL из файла')
             else:
                 links.append(url)
@@ -61,11 +62,13 @@ def download():
                 print("\n {}.mp4".format(vid.title))
                 try:
                     vid.streams.filter(file_extension='mp4').get_highest_resolution().download(output_path=dst)
-                except:
+                except Exception:
                     print(" \n   \u21b3 Ошибка загрузки")
-            except:
+            except Exception:
                 print('\n {} \n \u21b3 Ошибка подключения' .format(link))
                 pass
+    print('         ----Для выхода нажмите любую клавишу ----')
+    msvcrt.getch()
 
 
 if __name__ == '__main__':
