@@ -1,4 +1,3 @@
-import msvcrt
 import art
 import os
 from pytube import YouTube
@@ -67,8 +66,6 @@ def download():
             except Exception:
                 print('\n {} \n \u21b3 Ошибка подключения' .format(link))
                 pass
-    print('         ----Для выхода нажмите любую клавишу ----')
-    msvcrt.getch()
 
 
 if __name__ == '__main__':
