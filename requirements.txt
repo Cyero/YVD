@@ -1,0 +1,2 @@
+art==5.4
+git+https://github.com/ehsanbehdad/Pytube

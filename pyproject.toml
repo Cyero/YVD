@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "YVD"
+version = "1.0"
+description = "Simple YouTube Video Downloader"
+authors = ["Ant.butkov"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+art = "^5.4"
+pytube = "git+https://github.com/ehsanbehdad/Pytube"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
