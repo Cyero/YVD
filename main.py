@@ -6,7 +6,7 @@ from tkinter.filedialog import askdirectory, askopenfilename
 
 
 def automode():
-    """ Check for 'yvd.txt' in the directory"""
+    """ Check for 'yvd.txt' in the directory and start downloading"""
     def hello_auto_msg():
         """ Print a hello message"""
         print("                                            \u00a9 Ant.Butkov")
