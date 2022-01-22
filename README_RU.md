@@ -11,7 +11,7 @@ Simple YouTube Video Downloader
 Для загрузки исходных файлов с GitHub запустите следующий код в терминале :
 ```
 git clone https://github.com/Cyero/YVD.git 
-
+```
 Откройте терминал в каталоге с файлами программы. если вы используете pip, выполните следующий код:
 ```
 pip install -r requirements.txt
