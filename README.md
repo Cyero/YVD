@@ -1,26 +1,38 @@
 # YVD
 Simple YouTube Video Downloader
 
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django?logo=python)![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Cyero/YVD?include_prereleases&label=v1.0&logo=windows)
 
-1. Manual mode
+###   1. Installation and run
 
-Launch the software and enter the desired YouTube video URL in the field. You can continue to enter as many URLs as you want to download videos.
-After you have specified all the URLs you need, type "GO" (without quotes) in the input line to start the file download process. 
-In the next dialog box, you will be prompted to select a directory to save the files. Note that the dialog box may open behind the main software window, 
-so if you can't see the dialog box, move the main software window to another area of the screen. The process of downloading files is displayed in the main 
-window of the software. To cancel the download of the current file, press the key combination "Ctrl" + "C". 
 
-2. Semi-automatic mode
+***If you have downloaded the release version for windows - go to the section "Usage"***
 
-Run the software and type "FILE" (without quotes) in the URL input field. In the next dialog box, select the file containing the URLs of the required videos. 
-Note that each URL in the file must start on a new line. In the next dialog box, you will be prompted to select a directory to save the files. 
-Note that the dialog box may open behind the main software window, so if you can't see the dialog box, move the main software window to another area of 
-the screen. The process of downloading files is displayed in the main window of the software. To cancel the download of the current file, press the key 
-combination "Ctrl" + "C". 
+Open the terminal in the directory with the program files. if you are using pip run the following code:
+```
+pip install -r requirements.txt
+```
+if you are using poetry run the following code:
+```
+poetry install
+```
+After the necessary dependencies are installed, you can run the program executable file "main.py" (run "main_ru.py" if you want to run the program with Russian interface)
 
-3. Auto mode
 
-Create a text document with the name "yvd.txt" in the directory with the main software file, in which specify all the necessary video URLs. 
-Note that each URL in the file must start on a new line. Launch the software and wait for the downloads to complete. 
-Note that no dialog boxes will be created while the software is running, the progress of downloading files will not be displayed,
-and all files will be saved to the directory with the main software file. 
+### 2. Usage 
+
+
+After launch, the program will automatically check for the presence of the "yvd.txt" file in the directory with the program's executable file. If this file is found, the automatic mode will start, and all files will be loaded into the directory with the program files. 
+
+If the "yvd.txt" file was not in the directory, the main window of the program will open in front of you, in which you will be asked to enter the url of the video you need to download. You can enter as many urls as you need. After entering all the necessary url to start the video download process, you must enter "GO" in the URL input field. (If you enter "FILE" in the URL field you will be prompted to open a file containing the necessary links to download. This type of download works well if you need to download a large number of videos). 
+
+In the next dialog box you will be asked to specify a directory to save the video. Sometimes the directory selection window may open behind the main program window, so if you do not see it, just move the main program window to another area of the screen. 
+
+The download process has begun, you will be informed about its results in the main program window. If you need to cancel the download of the current file, press the key combination "Ctrl + C"
+
+
+### 3. URL file requirements
+
+
+As for the "yvd.txt" file, as well as for any other files containing links to videos, there is only one rule - each link must start on a new line in the file.
+
