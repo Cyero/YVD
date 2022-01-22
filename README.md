@@ -1,7 +1,7 @@
 # YVD
 Simple YouTube Video Downloader
 
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django?logo=python)![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Cyero/YVD?include_prereleases&label=v1.0&logo=windows)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django?logo=python)![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/Cyero/YVD?label=Release&logo=windows)
 
 ###   1. Installation and run
 
