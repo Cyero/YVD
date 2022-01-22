@@ -8,7 +8,7 @@ Simple YouTube Video Downloader
 
 ***If you have downloaded the release version for windows - go to the section "Usage"***
 
-Download source files from GitHub. Run the following code in terminal:
+To download the source files from GitHub, run the following code in a terminal :
 ```
 git clone https://github.com/Cyero/YVD.git 
 ```
