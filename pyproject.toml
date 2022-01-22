@@ -2,7 +2,7 @@
 name = "YVD"
 version = "1.0"
 description = "Simple YouTube Video Downloader"
-authors = ["Ant.butkov"]
+authors = ["Ant.Butkov"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
