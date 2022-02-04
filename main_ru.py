@@ -9,7 +9,6 @@ def automode():
     """ Check for 'yvd.txt' in the directory"""
     def hello_auto_msg():
         """ Print a hello message"""
-        print("                                            \u00a9 Ant.Butkov")
         print(art.text2art("YVD", "block"))
         print(art.text2art("Auto Mode"))
 
@@ -32,7 +31,6 @@ def automode():
 
 def hello_msg():
     """ Print a hello message"""
-    print("                                            \u00a9 Ant.Butkov")
     print(art.text2art("YVD", "block"))
     print("         Добро пожаловать в YoutubeVideoDownloader \n       Для загрузки укажите URL желаемых видео "
           "ниже \n         Введите 'FILE' для загрузки URL из файла \n      (Каждый URL должен начинаться с "
